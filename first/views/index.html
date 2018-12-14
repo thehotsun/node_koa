@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <script>
+    template.defaults.imports.log = console.log
+  </script>
+  <body>
+    <div>{{lists}}</div>
+    {{each lists}}
+    <div>{{ $value }}</div>
+    {{/each}}
+    <!-- <div><%=title%></div> -->
+    <form action="/new" method="post">
+      <input type="name" name="name" />
+      <input type="password" name="password" />
+      <button type="submit">tj</button>
+    </form>
+  </body>
+</html>
